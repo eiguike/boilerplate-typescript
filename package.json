@@ -1,0 +1,43 @@
+{
+  "name": "bootstrap-ts",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "scanf": "^1.1.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.29.0",
+    "husky": "^7.0.4",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.3",
+    "ts-mockito": "^2.6.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4"
+  },
+  "scripts": {
+    "lint": "eslint src/ --ext .ts",
+    "type": "npx tsc",
+    "test": "jest",
+    "build": "npx tsc",
+    "start": "npm run build && node dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eiguike/bootstrap-ts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eiguike/bootstrap-ts/issues"
+  },
+  "homepage": "https://github.com/eiguike/bootstrap-ts#readme",
+  "husky": {
+    "pre-commit": "npm run lint && npm run type",
+    "pre-push": "npm run test"
+  }
+}

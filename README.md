@@ -1,2 +1,2 @@
-# tocalc-app
-Website that helps everyone to calculate its finance (mortgage, compounding interest and etc)
+# boilerplate-typescript
+just to save my time when creating small projects with ts
